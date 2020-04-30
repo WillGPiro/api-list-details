@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
-const Header = () => ({ onSubmit, buttonText = 'Return Home' }) => (
+
+const Header = () => (
   <>
-    <div className='header'>
-      <form onSubmit={onSubmit}>
-        <button>{buttonText}</button>
-      </form>
-    </div>
+    <h1>X-Files API Viewer</h1>
+    <header>The Truth Is Out There</header>
+    <Link to ="/" >Return Home</Link>
   </>
 );
 

@@ -1,14 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App component renders App 1`] = `
-<Fragment>
+<BrowserRouter>
   <Header />
-  <Detail
-    actor="Gillian Anderson"
-    image="https://vignette.wikia.nocookie.net/x-files/images/3/31/Absalom.jpg/revision/latest/scale-to-width-down/310?cb=20070708201919"
-    name="Dana Scully"
-    occupation="FBI Agent"
-    status="alive"
-  />
-</Fragment>
+  <Switch>
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/detail/:name"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/:page?"
+    />
+  </Switch>
+</BrowserRouter>
 `;

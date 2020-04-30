@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Detail = ({ name, image, status, occupation, actor }) => (
+const Detail = ({ name, image, status, occupation, portrayedby }) => (
   <section>
     <h2>
       Name: {name}
@@ -9,7 +9,7 @@ const Detail = ({ name, image, status, occupation, actor }) => (
     <img src={image}></img>
     <ul>Status: {status}</ul>
     <ul>Occupation: {occupation}</ul>
-    <ul>Actor: {actor} </ul>
+    <ul>Actor: {portrayedby} </ul>
   </section>
 );
 
@@ -18,7 +18,7 @@ Detail.propTypes = {
   image: PropTypes.string.isRequired,
   status: PropTypes.string.isRequired,
   occupation: PropTypes.string.isRequired,
-  actor: PropTypes.string.isRequired
+  portrayedby: PropTypes.string.isRequired
 };
 
 export default Detail; 

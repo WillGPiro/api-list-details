@@ -1,15 +1,23 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch
+} from 'react-router-dom';
+
 import Header from '../Header.jsx';
-import Detail from '../Detail.jsx';
+import DetailContainer from '../../containers/DetailContainer';
+import DetailsContainer from '../../containers/DetailsContainer';
 
 export default function App() {
-  return  <> 
-    <Header /> 
-    <Detail name="Dana Scully"
-      image="https://vignette.wikia.nocookie.net/x-files/images/3/31/Absalom.jpg/revision/latest/scale-to-width-down/310?cb=20070708201919"
-      status="alive"
-      occupation="FBI Agent"
-      actor="Gillian Anderson"/>
-  </>;
+  return  (
+    <Router>
+      <Header />
+      <Switch>
+        <Route exact path="/detail/:name" component={DetailContainer} />
+        <Route exact path="/:page?" component={ DetailsContainer } />
+      </Switch>
+    </Router>
+  );
 }
   
