@@ -4,7 +4,7 @@ export const fetchXfilesCharacters = () => {
     .then(json => json.results);
 };
 
-export const fetchSingleCharacter = () => {
+export const fetchSingleCharacter = (name) => {
   return fetch(`https://xfiles-api.herokuapp.com/api/v1/characters/${name}`)
     .then(res => res.json())
     .then(json => ({

@@ -14,7 +14,7 @@ export default function App() {
     <Router>
       <Header />
       <Switch>
-        <Route exact path="/detail/:name" component={DetailContainer} />
+        <Route exact path="/detail/:name?" component={DetailContainer} />
         <Route exact path="/:page?" component={ DetailsContainer } />
       </Switch>
     </Router>
