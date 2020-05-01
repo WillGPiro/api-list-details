@@ -1,0 +1,16 @@
+.Detail {
+  background-color: black;
+  color: white;
+  img {
+    display: block;
+    margin: auto;
+  }
+  h2 {
+    text-align: center;
+  }
+
+  ul {
+    padding: 1rem 2rem;
+  }
+};
+
