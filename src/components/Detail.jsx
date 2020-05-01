@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+// import styles from './Details.css';
 
 const Detail = ({ name, image, status, occupation, portrayedby }) => (
   <section>
